@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "5288fffd-0fa2-48a8-97af-aa77f5d47447",
+		"name": "ApplicateAI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get catalogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3010/api/v1/catalogs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"v1",
+						"catalogs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get suppliers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3010/api/v1/suppliers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"v1",
+						"suppliers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get catalog by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3010/api/v1/catalogs/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"v1",
+						"catalogs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get supplier by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3010/api/v1/suppliers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"v1",
+						"suppliers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filter catalog  by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3010/api/v1/catalogs/name/ing",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"v1",
+						"catalogs",
+						"name",
+						"ing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create catelog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"skuCode\":\"skuCode\",\r\n    \"skuName\": \"skuName\",\r\n    \"skuDescription\": \"skuDescription\",\r\n    \"brand\": \"brand\",\r\n    \"brandDescription\": \"brandDescription\",\r\n    \"supplierName\": \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3010/api/v1/catalogs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"v1",
+						"catalogs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create supplier",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Name\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3010/api/v1/suppliers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"v1",
+						"suppliers",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
